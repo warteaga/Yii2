@@ -11,9 +11,9 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="site-about">
     <h1><?= Html::encode($this->title) ?></h1>
 	<?php 
-		$url = Url::to(['', 'id' => 100]);;
+		$url = Url::to(['site/index', 'id' => 'Arteaga']);;
 		
-		echo  Html::a( 'Link', $url, $options = []);
+		echo  Html::a( 'Bienvenido', $url, $options = []);
 	?>
     <p>
       Hola mundo desde Bienvenido <?= $id ?>

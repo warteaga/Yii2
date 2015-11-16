@@ -15,8 +15,12 @@ $config = [
           'enablePrettyUrl' => true,
           //'suffix' => '.html',
           'rules'=>[
-                    'site' => 'site/index',
-                    'site/<id:\d+>' => 'site/bienvenido',
+                '<controller:\w+>/<id:\d+>'=>'<controller>/view',
+                '<controller:\w+>/<action:\w+>/<id:\w+>'=>'<controller>/<action>',
+                '<controller:\w+>/<action:\w+>/<id:\w+>/<id2:\w+>'=>'<controller>/<action>',
+                '<controller:\w+>/<action:\w+>/<id:\w+>/<id2:\w+>/<id3:\w+>'=>'<controller>/<action>',
+                '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+                
             ],    
         ],
 

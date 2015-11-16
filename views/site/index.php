@@ -1,5 +1,6 @@
 <?php
-
+use yii\helpers\Html;
+use yii\helpers\Url;
 /* @var $this yii\web\View */
 
 $this->title = 'My Yii Application';
@@ -8,6 +9,11 @@ $this->title = 'My Yii Application';
 
     <div class="jumbotron">
         <h1>Congratulations!</h1>
+    <?php 
+        $url = Url::to(['site/bienvenido', 'id' => 'Willson']);;
+        
+        echo  Html::a( 'Bienvenido', $url, $options = ['class'=>'btn btn-primary']);
+    ?>       
 
         <p class="lead">You have successfully created your Yii-powered application.</p>
 

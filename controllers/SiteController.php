@@ -54,7 +54,7 @@ class SiteController extends Controller
 
     public function actionBienvenido($id=null)
     {
-        $var="Hola mundo";
+        $var="Bienvenido";
         return $this->render('bienvenido',compact('var','id'));
     }
 
